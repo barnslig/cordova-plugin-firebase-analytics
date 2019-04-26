@@ -32,16 +32,16 @@
             <config>
                 <source url="https://github.com/CocoaPods/Specs.git"/>
             </config>
-            <pods use-frameworks="true">
-                <pod name="Firebase/Core" spec="~> 5.14.0"/>
-                <pod name="GoogleTagManager" spec="~> 6.0"/>
+            <pods>
+                <pod name="Firebase/Core" spec="~> 5.4"/>
+                <pod name="GoogleTagManager" spec="~> 7.0"/>
             </pods>
         </podspec>
     </platform>
 
     <platform name="android">
         <preference name="FIREBASE_CORE_VERSION" default="16.0.+"/>
-        <preference name="TAGMANAGER_CORE_VERSION" default="11.0.+"/>
+        <preference name="TAGMANAGER_CORE_VERSION" default="16.0.+"/>
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="FirebaseAnalytics">
